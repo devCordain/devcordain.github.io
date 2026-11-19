@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <title>Choose — devCordain</title>
+    <meta
+      name="description"
+      content="This is your last chance. After this, there is no turning back."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="landing">
+    <canvas id="matrix" aria-hidden="true"></canvas>
+
+    <main class="stage">
+      <p class="prompt">This is your last chance.</p>
+      <h1 class="title">Choose.</h1>
+
+      <div class="pills">
+        <a class="pill pill--red" href="developer.html">
+          <span class="pill__glyph" aria-hidden="true"></span>
+          <span class="pill__label">
+            <span class="pill__name">Red pill</span>
+            <span class="pill__role">For developers</span>
+          </span>
+        </a>
+
+        <a class="pill pill--blue" href="recruiter.html">
+          <span class="pill__glyph" aria-hidden="true"></span>
+          <span class="pill__label">
+            <span class="pill__name">Blue pill</span>
+            <span class="pill__role">For recruiters</span>
+          </span>
+        </a>
+      </div>
+
+      <a class="pill pill--purple pill--both" href="both.html">
+        <span class="pill__glyph" aria-hidden="true"></span>
+        <span class="pill__label">
+          <span class="pill__name">Both pills</span>
+          <span class="pill__role">See everything</span>
+        </span>
+      </a>
+
+      <button id="motionToggle" class="motion-toggle" type="button" aria-pressed="true">
+        Pause rain
+      </button>
+    </main>
+
+    <script src="matrix.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <title>Recruiter — devCordain</title>
+    <meta
+      name="description"
+      content="For recruiters — background, skills, and outcomes."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="theme--recruiter">
+    <main class="page">
+      <header class="page__header">
+        <a class="back" href="index.html">← Back to choose</a>
+        <p class="page__eyebrow">Blue pill · For recruiters</p>
+        <h1 class="page__title">Welcome.</h1>
+        <p class="page__lead">
+          The short version. Each card flips to a quick summary — tap to grow it into the full story.
+        </p>
+      </header>
+
+      <section class="section" aria-labelledby="section-personal">
+        <h2 id="section-personal" class="section__title">Personal</h2>
+        <ul class="cards" data-section-label="Personal" data-card-ids="background,work-style,looking-for"></ul>
+      </section>
+
+      <section class="section" aria-labelledby="section-more">
+        <h2 id="section-more" class="section__title">More</h2>
+        <ul class="cards" data-section-label="More" data-card-ids="skills,built,style,experience,contact"></ul>
+      </section>
+    </main>
+
+    <script src="content.js"></script>
+    <script src="cards.js"></script>
+  </body>
+</html>
